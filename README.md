@@ -8,8 +8,7 @@ In our example cases, the simulated brain resposese are transformed with transfo
 Users can easily edit the code provided by adding their own estimators, tranformations or base waveforms in the simulations. This feature makes the provided code suitable for comparing different similarity estimators in more varied scenarios.
 
 Further, we provide a framework for testing the estimators with real M/EEG data. Including real example case study with the MNE sample dataset
-openly available from the MNE-Python project:
-https://mne.tools/stable/overview/datasets_index.html#sample.
+openly available from the MNE-Python project.
 
 ## Depedencies
 
