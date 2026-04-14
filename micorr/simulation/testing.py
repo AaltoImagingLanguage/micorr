@@ -148,8 +148,7 @@ def test_estimators(base_signal1,
                 
                 # Do we compare with the noise signal
                 if compare_with_noise:
-                    noise_std = np.max(scaled1)
-                    noisy_signal2 = np.random.normal(0, noise_std, size=len(noisy_signal1))
+                    noisy_signal2 = np.random.normal(np.mean(scaled1), np.std(scaled1), size=len(noisy_signal1))
                     
                 # We compare with the transformed signal
                 else:
