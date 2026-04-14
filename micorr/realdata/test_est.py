@@ -46,7 +46,7 @@ def lowerbound_random(est_list, sig_comp, snr=30, n_runs=10_000):
                 noisy_signal = sig_comp + np.random.normal(0, noise_std_sig, len(sig_comp))
             else:
                 noisy_signal = sig_comp
-            noise = np.random.normal(0, np.std(noisy_signal), size=len(sig_comp))
+            noise = np.random.normal(np.mean(noisy_signal), np.std(noisy_signal), size=len(sig_comp))
             for est in est_list:
                 estimator = est_list[est] 
                 value = estimator(noisy_signal, noise)
